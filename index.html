@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jhatpat - Quick Food Delivery Service</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="style.css">
+    
+</head>
+<body>
+    <!-- Ad section -->
+    <!-- Modal -->
+  <div class="modal fade" id="myad" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-center">
+          <img src="images/ad.png" alt="ad" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jhat<span>pat</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#order">Order Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1>Delicious Food Delivered to Your Door</h1>
+                    <p class="lead">Fast, reliable, Pure Veg and delicious food delivery service. Order your favorite meals with just a few clicks.</p>
+                    
+                    <a href="#order" class="btn btn-outline-light btn-lg">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="section-title">
+                <h2>Why Choose Jhatpat</h2>
+                <p>We provide the best food delivery experience</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-shipping-fast feature-icon"></i>
+                            <h5 class="card-title">Fast Delivery</h5>
+                            <p class="card-text">Get your food delivered within 30 minutes or get 50% off your next order.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-utensils feature-icon"></i>
+                            <h5 class="card-title">Fresh Ingredients</h5>
+                            <p class="card-text">We use only the freshest ingredients to prepare your meals with love.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-tag feature-icon"></i>
+                            <h5 class="card-title">Best Prices</h5>
+                            <p class="card-text">Enjoy delicious meals at affordable prices with regular discounts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="section-title">
+                <h2>Our Popular Dishes</h2>
+                <p>Explore our delicious menu</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card card">
+                        <div class="position-relative">
+                            <img src="images/pizza.avif"width="390px">
+                            <span class="discount-badge">15% OFF</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita Pizza</h5>
+                            <p class="card-text">Classic pizza with tomato sauce, mozzarella, and fresh basil</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs.320/-</span>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card card">
+                        <img src="images/burger.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Veg Burger</h5>
+                            <p class="card-text">Juicy Burger patty with fresh vegetables and special sauce</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs.299/-</span>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card card">
+                        <div class="position-relative">
+                            <img src="images/pasta.jpg"width="390px">
+                            <span class="discount-badge">10% OFF</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Creamy Alfredo Pasta</h5>
+                            <p class="card-text">Fettuccine pasta with creamy Alfredo sauce and parmesan</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs.299/-</span>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card card">
+                        <img src="images/salad.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Garden Salad</h5>
+                            <p class="card-text">Mixed greens with vegetables and your choice of dressing</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">240/-</span>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card card">
+                        <img src="images/rolls.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">California Rolls</h5>
+                            <p class="card-text">Fresh sushi rolls with crab, avocado, and cucumber</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs.450/-</span>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card card">
+                        <div class="position-relative">
+                            <img src="images/chocolate.jpg"width="409px">
+                            <span class="discount-badge">5% OFF</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Brownie</h5>
+                            <p class="card-text">Rich chocolate brownie with vanilla ice cream</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs.399/-</span>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuModal">
+    View Full Menu
+  </button>
+
+  <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-center">
+          <img src="images/menu.png" alt="Menu" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-5">
+        <div class="container py-5">
+            <div class="section-title">
+                <h2>Order Now</h2>
+                <p>Place your order for fast delivery</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="order-form">
+                        <h4 class="mb-4">Delivery Information</h4>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Your Phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Address" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" rows="2" placeholder="Delivery Instructions (optional)"></textarea>
+                            <div class="text-center mt-4">
+                                <textarea class="form-control"rows="1"placeholder="Add your Promo Code and get free delivery  (optional)"></textarea>
+                                <button type="submit" class="btn btn-primary">Place Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                   
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>What our customers say about us</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The food was delivered hot and fresh. The pizza was absolutely delicious! Will definitely order again."</p>
+                        <p class="testimonial-author">- Binita Sapkota</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Fast delivery and great quality food. The burgers are the best in town! Highly recommend Jhatpat."</p>
+                        <p class="testimonial-author">- Anup Thapa Magar</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Their service is amazing. The food always arrives on time and tastes fantastic. My go-to delivery service!"</p>
+                        <p class="testimonial-author">- Anil Luitel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section class="app-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Download Our App</h2>
+                    <p>Get exclusive discounts and faster ordering with our mobile app. Order food with just a few taps!</p>
+                    <div class="mt-4">
+                        <a href="#" class="app-btn"><i class="fab fa-google-play me-2"></i> Google Play</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mobile App" class="img-fluid" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4 class="footer-logo">Jhatpat</h4>
+                    <p>Fast, reliable, Pure Veg and delicious food delivery service. Order your favorite meals with just a few clicks.</p>
+                   
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>New Baneshor,Kathmandu</li>
+                        <li><i class="fas fa-phone me-2"></i>01568975</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@jhatpat.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Opening Hours</h5>
+                    <ul>
+                        <li>Monday - Friday: 10am - 10pm</li>
+                        <li>Saturday: 11am - 11pm</li>
+                        <li>Sunday: 11am - 9pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2023 Jhatpat Food Delivery Service. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $document.redy(function()
+            {
+                $("#mymodal"),modal('show');
+
+            });
+        </script>
+        <script>
+         window.addEventListener('load', () => {
+      const myModal = new bootstrap.Modal(document.getElementById('myad'));
+      myModal.show();
+    });
+        </script>
+    
+ 
+</body>
+</html>
